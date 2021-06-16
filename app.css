@@ -1,11 +1,12 @@
 :root{
-    --off-white: #E5E7EB;
+    --off-white: #ebeced;
     --primary-color: #2a9d8f;
     --dark-grey: #264653;
 }
-
+html{
+    font-family: 'Nunito', sans-serif;
+}
 body{
-    font-size: '';
     margin:0px;
 }
 
@@ -13,11 +14,18 @@ hr{
     margin:2.2rem 0rem;
 }
 
+/* spaces */
+
+
+
 /* container */
 .container{
     padding: 0rem 1rem;
 }
 
+.list-non-bullet .container{
+    padding-bottom: 2rem;
+}
 .container-center{
     max-width: 600px;
     margin: auto;
@@ -27,7 +35,7 @@ hr{
 .link{
     text-decoration: none;
     padding: 0.5rem 1rem;
-    
+
 }
 
 .link-primary{
@@ -40,6 +48,10 @@ hr{
     color: var(--primary-color);
     border: 1px solid var(--primary-color);
     border-radius: 0.5rem;
+}
+
+.link-active{
+    font-weight: 700;
 }
 
 /* lists */
@@ -62,8 +74,8 @@ hr{
 
 }
 .navigation .nav-brand{
-    font-weight: bold;
-    font-size: 1.2rem;
+    font-weight: 700;
+    font-size: 1.3rem;
 }
 .navigation .nav-pills{
     text-align: right;
@@ -81,6 +93,7 @@ hr{
 
 .hero{
     padding: 2rem;
+    padding-top: 5rem;
 }
 
 .hero .hero-img{
@@ -106,17 +119,22 @@ hr{
 }
 .section h3{
     text-align: center;
+    font-weight: 700;
 }
 .ow{
     background-color: var(--off-white);
 }
 
+.section .tech{
+    color:#2a9d8f;
+}
 /* footer */
 
 .footer{
     text-align: center;
     background-color: var(--primary-color);
     padding: 1rem 0.5rem;
+    padding-bottom: 2rem;
     color: white;
     border-top-right-radius: 1.5rem;
 }
